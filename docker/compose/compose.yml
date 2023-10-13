@@ -5,4 +5,12 @@ services:
        - "80"
      volumes:
        - /home/dockerlabs/dockerfiles/:/var/www/html
-  
+   app:
+     image: tomcat
+     ports:
+       - "8080"
+   db:
+     image: redis 
+     ports:
+        - "9080"
+
